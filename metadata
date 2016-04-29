@@ -1,0 +1,168 @@
+--- !ruby/object:Gem::Specification
+name: wirispluginengine
+version: !ruby/object:Gem::Version
+  version: 3.57.0.1171
+platform: ruby
+authors:
+- Wiris
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2016-04-06 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: rails
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: sqlite3
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+description: Description of Wirispluginengine.
+email:
+- Your email
+executables: []
+extensions: []
+extra_rdoc_files: []
+files:
+- Rakefile
+- app/assets/javascripts/wirispluginengine/WIRISplugins.js
+- app/controllers/wirispluginengine/application_controller.rb
+- app/helpers/wirispluginengine/application_helper.rb
+- config/routes.rb
+- configuration.ini.dist
+- lib/com/wiris/common/WInteger.rb
+- lib/com/wiris/plugin/api/Cas.rb
+- lib/com/wiris/plugin/api/Configuration.rb
+- lib/com/wiris/plugin/api/ConfigurationKeys.rb
+- lib/com/wiris/plugin/api/Editor.rb
+- lib/com/wiris/plugin/api/Filter.rb
+- lib/com/wiris/plugin/api/PluginBuilder.rb
+- lib/com/wiris/plugin/api/Render.rb
+- lib/com/wiris/plugin/api/Test.rb
+- lib/com/wiris/plugin/api/TextService.rb
+- lib/com/wiris/plugin/configuration/ConfigurationUpdater.rb
+- lib/com/wiris/plugin/impl/CasImpl.rb
+- lib/com/wiris/plugin/impl/ConfigurationImpl.rb
+- lib/com/wiris/plugin/impl/CustomConfigurationUpdater.rb
+- lib/com/wiris/plugin/impl/DefaultConfigurationUpdater.rb
+- lib/com/wiris/plugin/impl/EditorImpl.rb
+- lib/com/wiris/plugin/impl/FileConfigurationUpdater.rb
+- lib/com/wiris/plugin/impl/FileStorageAndCache.rb
+- lib/com/wiris/plugin/impl/FolderTreeStorageAndCache.rb
+- lib/com/wiris/plugin/impl/HttpImpl.rb
+- lib/com/wiris/plugin/impl/HttpListener.rb
+- lib/com/wiris/plugin/impl/PluginBuilderImpl.rb
+- lib/com/wiris/plugin/impl/RenderImpl.rb
+- lib/com/wiris/plugin/impl/TestImpl.rb
+- lib/com/wiris/plugin/impl/TextFilter.rb
+- lib/com/wiris/plugin/impl/TextFilterTags.rb
+- lib/com/wiris/plugin/impl/TextServiceImpl.rb
+- lib/com/wiris/plugin/storage/StorageAndCache.rb
+- lib/com/wiris/util/json/JSon.rb
+- lib/com/wiris/util/json/JSonIntegerFormat.rb
+- lib/com/wiris/util/json/StringParser.rb
+- lib/com/wiris/util/sys/HttpConnection.rb
+- lib/com/wiris/util/sys/HttpConnectionListener.rb
+- lib/com/wiris/util/sys/IniFile.rb
+- lib/com/wiris/util/sys/Store.rb
+- lib/com/wiris/util/xml/SerializableImpl.rb
+- lib/com/wiris/util/xml/WCharacterBase.rb
+- lib/com/wiris/util/xml/WEntities.rb
+- lib/com/wiris/util/xml/WXmlUtils.rb
+- lib/com/wiris/util/xml/XmlSerializer.rb
+- lib/com/wiris/util/xml/XmlWriter.rb
+- lib/loader.rb
+- lib/src-generic/Array.rb
+- lib/src-generic/ArrayInt.rb
+- lib/src-generic/Base64.rb
+- lib/src-generic/BaseCode.rb
+- lib/src-generic/Bytes.rb
+- lib/src-generic/BytesInput.rb
+- lib/src-generic/EReg.rb
+- lib/src-generic/File.rb
+- lib/src-generic/FileLock.rb
+- lib/src-generic/FileSystem.rb
+- lib/src-generic/Hash.rb
+- lib/src-generic/Http.rb
+- lib/src-generic/HttpResponse.rb
+- lib/src-generic/Iterator.rb
+- lib/src-generic/Math.rb
+- lib/src-generic/Md5.rb
+- lib/src-generic/Md5Tools.rb
+- lib/src-generic/PropertiesTools.rb
+- lib/src-generic/Reflect.rb
+- lib/src-generic/RubyConfigurationUpdater.rb
+- lib/src-generic/Serializer.rb
+- lib/src-generic/Std.rb
+- lib/src-generic/Storage.rb
+- lib/src-generic/StringBuf.rb
+- lib/src-generic/StringTools.rb
+- lib/src-generic/Timer.rb
+- lib/src-generic/Type.rb
+- lib/src-generic/TypeTools.rb
+- lib/src-generic/Unserializer.rb
+- lib/src-generic/Utf8.rb
+- lib/src-generic/Xml.rb
+- lib/src-generic/extended/Integer.rb
+- lib/src-generic/extended/Math.rb
+- lib/src-generic/extended/Properties.rb
+- lib/src-generic/extended/String.rb
+- lib/src-generic/settings/PlatformSettings.rb
+- lib/wirispluginengine.rb
+- lib/wirispluginengine/engine.rb
+- lib/wirispluginengine/integration/configurationjs.rb
+- lib/wirispluginengine/integration/createimage.rb
+- lib/wirispluginengine/integration/getmathml.rb
+- lib/wirispluginengine/integration/service.rb
+- lib/wirispluginengine/integration/showimage.rb
+- lib/wirispluginengine/integration/test.rb
+- lib/wirispluginengine/version.rb
+- resources/VERSION
+- resources/default-configuration.ini
+- resources/tech.txt
+homepage: ''
+licenses:
+- MIT
+metadata: {}
+post_install_message: 
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 2.5.1
+signing_key: 
+specification_version: 4
+summary: Summary of Wirispluginengine.
+test_files: []
